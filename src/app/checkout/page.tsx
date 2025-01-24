@@ -4,7 +4,7 @@ import { useState } from 'react'
 import { useStore } from '@/context/StoreContext'
 import { useRouter } from 'next/navigation'
 import Image from 'next/image'
-import { Header } from '@/components/Header'
+
 
 interface FormData {
   firstName: string
@@ -55,7 +55,7 @@ export default function CheckoutPage() {
 
   return (
     <div className="min-h-screen bg-white">
-      <Header />
+      
       <div className="container mx-auto px-4 py-16">
       <form onSubmit={handleSubmit} className="grid lg:grid-cols-2 gap-16">
         <div>
@@ -105,7 +105,7 @@ export default function CheckoutPage() {
                 onChange={handleInputChange}
                 className="w-full p-2 border rounded"
               >
-                <option value="Sri Lanka">Sri Lanka</option>
+                <option value="Pak">Pakistan</option>
               </select>
             </div>
 
